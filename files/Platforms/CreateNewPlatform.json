@@ -1,0 +1,8 @@
+{
+  "name": "Платформа тестовая",
+  "description": "описание",
+  "isActive": "true",
+  "file": "https://loremflickr.com/50/50/abstract?lock=30394",
+  "priceMin": 120,
+  "priceMax": 270
+}

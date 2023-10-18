@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-27T09:04:50 MSK" name="Test1" finished-at="2023-06-27T09:04:53 MSK" duration-ms="3451">
+    <groups>
+    </groups>
+    <test started-at="2023-06-27T09:04:50 MSK" name="Command line test" finished-at="2023-06-27T09:04:53 MSK" duration-ms="3451">
+      <class name="Test1">
+        <test-method is-config="true" signature="preconditions()[pri:0, instance:Test1@6c779568]" started-at="2023-06-27T09:04:50 MSK" name="preconditions" finished-at="2023-06-27T09:04:51 MSK" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method signature="getPlatformsTest()[pri:0, instance:Test1@6c779568]" started-at="2023-06-27T09:04:51 MSK" name="getPlatformsTest" finished-at="2023-06-27T09:04:53 MSK" duration-ms="2639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPlatformsTest -->
+      </class> <!-- Test1 -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Test1 -->
+</testng-results>

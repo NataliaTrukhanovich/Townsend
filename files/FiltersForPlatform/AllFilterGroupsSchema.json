@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "filterGroupName"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "filterGroupName": {
+        "type": "string"
+      }
+    }
+  }
+}

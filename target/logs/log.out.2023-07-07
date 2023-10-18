@@ -1,0 +1,550 @@
+2023-07-07 01:40:20.890 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:40:20.968 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:40:21.070 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:40:21.073 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:40:21.074 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:40:21.076 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:40:21.077 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:40:21.077 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/docs/platforms HTTP/1.1
+2023-07-07 01:40:21.078 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/docs/platforms HTTP/1.1[\r][\n]"
+2023-07-07 01:40:21.081 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:40:21.082 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:40:21.083 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:40:21.084 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:40:21.085 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:40:21.086 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:40:21.087 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/docs/platforms HTTP/1.1
+2023-07-07 01:40:21.089 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:40:21.090 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:40:21.090 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:40:21.091 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:40:21.092 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:40:21.162 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2023-07-07 01:40:21.166 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:40:21.168 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:40:21.169 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:40:21.171 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 81[\r][\n]"
+2023-07-07 01:40:21.175 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"51-7I6+FzCmIqYSKeynCPkI3y7Oh38"[\r][\n]"
+2023-07-07 01:40:21.176 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:40:18 GMT[\r][\n]"
+2023-07-07 01:40:21.181 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:40:21.182 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:40:21.183 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:40:21.187 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 404 Not Found
+2023-07-07 01:40:21.190 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 404 Not Found
+2023-07-07 01:40:21.192 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:40:21.194 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:40:21.199 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:40:21.201 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 81
+2023-07-07 01:40:21.205 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"51-7I6+FzCmIqYSKeynCPkI3y7Oh38"
+2023-07-07 01:40:21.206 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:40:18 GMT
+2023-07-07 01:40:21.207 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:40:21.208 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:40:21.220 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:40:21.232 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:40:21.234 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:40:21.566 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:40:21.568 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:40:21.628 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:40:21.629 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:40:21.630 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:40:21.631 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:40:21.632 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:40:21.633 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/docs/auth/login HTTP/1.1
+2023-07-07 01:40:21.634 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/docs/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:40:21.635 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:40:21.636 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:40:21.638 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:40:21.639 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:40:21.640 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:40:21.641 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:40:21.642 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:40:21.643 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:40:21.644 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/docs/auth/login HTTP/1.1
+2023-07-07 01:40:21.645 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:40:21.647 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:40:21.648 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:40:21.649 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:40:21.650 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:40:21.651 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:40:21.651 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:40:21.653 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:40:21.654 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:40:21.655 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:40:21.656 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:40:21.803 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2023-07-07 01:40:21.804 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:40:21.804 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:40:21.805 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:40:21.806 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 83[\r][\n]"
+2023-07-07 01:40:21.807 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"53-YjkpXtQc5ZHfzEXd7FOtATt2JqQ"[\r][\n]"
+2023-07-07 01:40:21.807 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:40:19 GMT[\r][\n]"
+2023-07-07 01:40:21.808 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:40:21.808 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:40:21.809 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:40:21.810 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 404 Not Found
+2023-07-07 01:40:21.810 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 404 Not Found
+2023-07-07 01:40:21.811 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:40:21.812 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:40:21.812 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:40:21.813 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 83
+2023-07-07 01:40:21.813 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"53-YjkpXtQc5ZHfzEXd7FOtATt2JqQ"
+2023-07-07 01:40:21.814 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:40:19 GMT
+2023-07-07 01:40:21.814 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:40:21.815 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:40:21.816 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:40:21.816 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:40:21.817 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:41:31.124 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:41:31.166 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:41:31.235 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:41:31.238 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:41:31.239 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:41:31.240 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:41:31.241 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:41:31.242 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/docs/auth/login HTTP/1.1
+2023-07-07 01:41:31.243 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/docs/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:41:31.245 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:41:31.246 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:41:31.247 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:41:31.248 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:41:31.249 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:41:31.250 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:41:31.250 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:41:31.252 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:41:31.253 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/docs/auth/login HTTP/1.1
+2023-07-07 01:41:31.254 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:41:31.255 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:41:31.255 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:41:31.256 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:41:31.257 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:41:31.257 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:41:31.258 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:41:31.259 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:41:31.260 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:41:31.261 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:41:31.262 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:41:31.369 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2023-07-07 01:41:31.373 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:41:31.374 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:41:31.375 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:41:31.376 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 83[\r][\n]"
+2023-07-07 01:41:31.377 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"53-YjkpXtQc5ZHfzEXd7FOtATt2JqQ"[\r][\n]"
+2023-07-07 01:41:31.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:41:29 GMT[\r][\n]"
+2023-07-07 01:41:31.380 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:41:31.381 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:41:31.382 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:41:31.385 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 404 Not Found
+2023-07-07 01:41:31.387 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 404 Not Found
+2023-07-07 01:41:31.388 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:41:31.389 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:41:31.390 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:41:31.391 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 83
+2023-07-07 01:41:31.392 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"53-YjkpXtQc5ZHfzEXd7FOtATt2JqQ"
+2023-07-07 01:41:31.393 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:41:29 GMT
+2023-07-07 01:41:31.394 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:41:31.395 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:41:31.409 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:41:31.431 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:41:31.432 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:42:40.383 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:42:40.420 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:42:40.515 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:42:40.518 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:42:40.519 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:42:40.521 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:42:40.522 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:42:40.522 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/docs/api/auth/login HTTP/1.1
+2023-07-07 01:42:40.523 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/docs/api/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:42:40.526 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:42:40.526 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:42:40.527 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:42:40.528 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:42:40.529 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:42:40.530 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:42:40.531 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:42:40.533 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:42:40.534 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/docs/api/auth/login HTTP/1.1
+2023-07-07 01:42:40.535 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:42:40.536 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:42:40.537 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:42:40.537 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:42:40.538 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:42:40.539 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:42:40.540 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:42:40.541 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:42:40.542 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:42:40.542 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:42:40.543 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:42:40.603 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2023-07-07 01:42:40.613 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:42:40.616 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:42:40.624 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:42:40.627 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 87[\r][\n]"
+2023-07-07 01:42:40.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"57-VkGRWBAsPzyB2sK1q3pa0VbAfx4"[\r][\n]"
+2023-07-07 01:42:40.632 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:42:38 GMT[\r][\n]"
+2023-07-07 01:42:40.639 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:42:40.641 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:42:40.643 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:42:40.646 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 404 Not Found
+2023-07-07 01:42:40.648 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 404 Not Found
+2023-07-07 01:42:40.649 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:42:40.652 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:42:40.653 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:42:40.655 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 87
+2023-07-07 01:42:40.657 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"57-VkGRWBAsPzyB2sK1q3pa0VbAfx4"
+2023-07-07 01:42:40.658 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:42:38 GMT
+2023-07-07 01:42:40.659 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:42:40.661 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:42:40.673 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:42:40.688 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:42:40.689 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:43:17.561 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:43:17.597 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:43:17.673 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:43:17.677 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:43:17.678 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:43:17.680 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:43:17.681 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:43:17.683 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/auth/login HTTP/1.1
+2023-07-07 01:43:17.684 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:43:17.687 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:43:17.688 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:43:17.689 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:43:17.690 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:43:17.691 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:43:17.692 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:43:17.693 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:43:17.695 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:43:17.696 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/auth/login HTTP/1.1
+2023-07-07 01:43:17.697 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:43:17.698 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:43:17.699 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:43:17.700 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:43:17.701 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:43:17.702 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:43:17.703 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:43:17.705 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:43:17.706 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:43:17.707 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:43:17.708 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:43:18.049 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+2023-07-07 01:43:18.056 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:43:18.057 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:43:18.059 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:43:18.062 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 43[\r][\n]"
+2023-07-07 01:43:18.064 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"2b-hGShxOkieaAVDloBubJVM+h58D8"[\r][\n]"
+2023-07-07 01:43:18.066 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:43:15 GMT[\r][\n]"
+2023-07-07 01:43:18.069 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:43:18.071 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:43:18.074 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:43:18.078 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 401 Unauthorized
+2023-07-07 01:43:18.082 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 401 Unauthorized
+2023-07-07 01:43:18.084 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:43:18.086 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:43:18.088 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:43:18.089 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 43
+2023-07-07 01:43:18.090 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"2b-hGShxOkieaAVDloBubJVM+h58D8"
+2023-07-07 01:43:18.092 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:43:15 GMT
+2023-07-07 01:43:18.093 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:43:18.094 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:43:18.110 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:43:18.111 [main] org.apache.http.impl.auth.HttpAuthenticator.isAuthenticationRequested(HttpAuthenticator.java:77) - Authentication required
+2023-07-07 01:43:18.114 [main] org.apache.http.impl.auth.HttpAuthenticator.handleAuthChallenge(HttpAuthenticator.java:106) - node.twnsnd.online:31033 requested authentication
+2023-07-07 01:43:18.115 [main] org.apache.http.impl.auth.HttpAuthenticator.handleAuthChallenge(HttpAuthenticator.java:110) - Response contains no authentication challenges
+2023-07-07 01:43:18.124 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:43:18.125 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:45:43.014 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:45:43.523 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:45:44.247 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:45:44.305 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:45:44.311 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:45:44.339 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:45:44.346 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:45:44.352 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/auth/login HTTP/1.1
+2023-07-07 01:45:44.360 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:45:44.400 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:45:44.404 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:45:44.409 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:45:44.415 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:45:44.421 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:45:44.427 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:45:44.433 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:45:44.460 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:45:44.467 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/auth/login HTTP/1.1
+2023-07-07 01:45:44.473 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:45:44.478 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:45:44.483 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:45:44.487 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:45:44.491 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:45:44.496 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:45:44.501 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:45:44.507 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:45:44.511 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:45:44.516 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:45:44.519 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:45:44.747 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+2023-07-07 01:45:44.796 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:45:44.802 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:45:44.810 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:45:44.817 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 43[\r][\n]"
+2023-07-07 01:45:44.825 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"2b-hGShxOkieaAVDloBubJVM+h58D8"[\r][\n]"
+2023-07-07 01:45:44.829 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:45:42 GMT[\r][\n]"
+2023-07-07 01:45:44.834 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:45:44.839 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:45:44.844 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:45:44.867 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 401 Unauthorized
+2023-07-07 01:45:44.873 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 401 Unauthorized
+2023-07-07 01:45:44.878 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:45:44.884 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:45:44.889 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:45:44.894 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 43
+2023-07-07 01:45:44.898 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"2b-hGShxOkieaAVDloBubJVM+h58D8"
+2023-07-07 01:45:44.902 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:45:42 GMT
+2023-07-07 01:45:44.907 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:45:44.912 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:45:45.077 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:45:45.082 [main] org.apache.http.impl.auth.HttpAuthenticator.isAuthenticationRequested(HttpAuthenticator.java:77) - Authentication required
+2023-07-07 01:45:45.104 [main] org.apache.http.impl.auth.HttpAuthenticator.handleAuthChallenge(HttpAuthenticator.java:106) - node.twnsnd.online:31033 requested authentication
+2023-07-07 01:45:45.110 [main] org.apache.http.impl.auth.HttpAuthenticator.handleAuthChallenge(HttpAuthenticator.java:110) - Response contains no authentication challenges
+2023-07-07 01:45:45.293 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:45:45.299 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:52:29.667 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:52:29.745 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:52:29.850 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:52:29.853 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:52:29.855 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:52:29.858 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:52:29.859 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:52:29.860 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/auth/login HTTP/1.1
+2023-07-07 01:52:29.861 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:52:29.864 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:52:29.865 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:52:29.866 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:52:29.868 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:52:29.869 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:52:29.870 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:52:29.873 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:52:29.876 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:52:29.878 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/auth/login HTTP/1.1
+2023-07-07 01:52:29.881 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:52:29.882 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:52:29.883 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:52:29.885 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:52:29.890 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:52:29.891 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:52:29.892 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:52:29.893 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:52:29.895 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:52:29.896 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:52:29.897 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:52:30.073 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-07-07 01:52:30.079 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:52:30.081 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:52:30.082 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2ODg2ODM5NDcsImV4cCI6MTY5Mzg2Nzk0N30.5kbdmGyjBHJDTJO4846B7uBmj--WJ3WF3wjoFfRuvJ8; Path=/; HttpOnly; Secure[\r][\n]"
+2023-07-07 01:52:30.084 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:52:30.085 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 264[\r][\n]"
+2023-07-07 01:52:30.086 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"108-TSxU/SAeBUVywzHfX+BItFCJtlA"[\r][\n]"
+2023-07-07 01:52:30.088 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:52:27 GMT[\r][\n]"
+2023-07-07 01:52:30.089 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:52:30.090 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:52:30.091 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:52:30.096 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 201 Created
+2023-07-07 01:52:30.097 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 201 Created
+2023-07-07 01:52:30.098 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:52:30.100 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:52:30.101 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2ODg2ODM5NDcsImV4cCI6MTY5Mzg2Nzk0N30.5kbdmGyjBHJDTJO4846B7uBmj--WJ3WF3wjoFfRuvJ8; Path=/; HttpOnly; Secure
+2023-07-07 01:52:30.102 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:52:30.103 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 264
+2023-07-07 01:52:30.104 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"108-TSxU/SAeBUVywzHfX+BItFCJtlA"
+2023-07-07 01:52:30.106 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:52:27 GMT
+2023-07-07 01:52:30.111 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:52:30.118 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:52:30.159 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:52:30.439 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:52:30.441 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:53:25.667 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:53:25.695 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:53:25.760 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:53:25.763 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:53:25.764 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:53:25.765 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:53:25.765 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:53:25.766 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /platforms HTTP/1.1
+2023-07-07 01:53:25.767 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /platforms HTTP/1.1[\r][\n]"
+2023-07-07 01:53:25.768 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:53:25.769 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:53:25.770 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:53:25.771 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:53:25.772 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:53:25.773 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:53:25.773 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /platforms HTTP/1.1
+2023-07-07 01:53:25.775 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:53:25.776 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:53:25.777 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:53:25.778 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:53:25.779 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:53:25.833 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2023-07-07 01:53:25.836 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:53:25.838 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:53:25.839 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:53:25.840 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 72[\r][\n]"
+2023-07-07 01:53:25.842 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"48-PtW7AXON9TbY7/L2IjOKWYcOTAM"[\r][\n]"
+2023-07-07 01:53:25.843 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:53:23 GMT[\r][\n]"
+2023-07-07 01:53:25.844 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:53:25.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:53:25.846 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:53:25.848 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 404 Not Found
+2023-07-07 01:53:25.850 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 404 Not Found
+2023-07-07 01:53:25.851 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:53:25.852 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:53:25.854 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:53:25.855 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 72
+2023-07-07 01:53:25.857 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"48-PtW7AXON9TbY7/L2IjOKWYcOTAM"
+2023-07-07 01:53:25.858 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:53:23 GMT
+2023-07-07 01:53:25.859 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:53:25.860 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:53:25.871 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:53:25.887 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:53:25.889 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:54:13.817 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:54:13.876 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:54:13.949 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:54:13.953 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:54:13.954 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:54:13.956 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:54:13.957 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:54:13.958 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms HTTP/1.1
+2023-07-07 01:54:13.959 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms HTTP/1.1[\r][\n]"
+2023-07-07 01:54:13.961 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:54:13.963 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:54:13.963 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:54:13.964 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:54:13.965 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:54:13.966 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:54:13.967 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms HTTP/1.1
+2023-07-07 01:54:13.969 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:54:13.970 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:54:13.971 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:54:13.972 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:54:13.973 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:54:14.037 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2023-07-07 01:54:14.040 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:54:14.042 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:54:14.043 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:54:14.044 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 53[\r][\n]"
+2023-07-07 01:54:14.045 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"35-XEFJvujIbPEmEuivDo+EjVeESg8"[\r][\n]"
+2023-07-07 01:54:14.048 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:54:11 GMT[\r][\n]"
+2023-07-07 01:54:14.049 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:54:14.051 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:54:14.052 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:54:14.058 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 403 Forbidden
+2023-07-07 01:54:14.059 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 403 Forbidden
+2023-07-07 01:54:14.060 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:54:14.061 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:54:14.062 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:54:14.064 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 53
+2023-07-07 01:54:14.064 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"35-XEFJvujIbPEmEuivDo+EjVeESg8"
+2023-07-07 01:54:14.065 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:54:11 GMT
+2023-07-07 01:54:14.066 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:54:14.067 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:54:14.077 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:54:14.093 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:54:14.095 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:54:34.102 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:54:34.130 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:54:34.195 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:54:34.198 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:54:34.199 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:54:34.200 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:54:34.201 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:54:34.202 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/auth/login HTTP/1.1
+2023-07-07 01:54:34.203 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+2023-07-07 01:54:34.205 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:54:34.205 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-07 01:54:34.206 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-07 01:54:34.206 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:54:34.207 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:54:34.208 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:54:34.208 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:54:34.210 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:54:34.211 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/auth/login HTTP/1.1
+2023-07-07 01:54:34.212 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:54:34.212 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-07 01:54:34.213 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-07 01:54:34.214 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:54:34.214 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:54:34.215 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:54:34.216 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:54:34.217 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-07 01:54:34.218 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-07 01:54:34.218 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-07 01:54:34.219 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-07 01:54:34.392 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-07-07 01:54:34.395 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:54:34.396 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:54:34.397 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2ODg2ODQwNzIsImV4cCI6MTY5Mzg2ODA3Mn0.kzL8C1QnVpVByEA1P5gDziboNBjlnWU1dpSr7lj_ZPQ; Path=/; HttpOnly; Secure[\r][\n]"
+2023-07-07 01:54:34.398 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:54:34.399 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 264[\r][\n]"
+2023-07-07 01:54:34.401 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"108-zXR8h0Lw92HUg3FkxfoRQdV0NUk"[\r][\n]"
+2023-07-07 01:54:34.402 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:54:32 GMT[\r][\n]"
+2023-07-07 01:54:34.403 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:54:34.404 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:54:34.405 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:54:34.407 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 201 Created
+2023-07-07 01:54:34.408 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 201 Created
+2023-07-07 01:54:34.411 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:54:34.412 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:54:34.413 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2ODg2ODQwNzIsImV4cCI6MTY5Mzg2ODA3Mn0.kzL8C1QnVpVByEA1P5gDziboNBjlnWU1dpSr7lj_ZPQ; Path=/; HttpOnly; Secure
+2023-07-07 01:54:34.414 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:54:34.415 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 264
+2023-07-07 01:54:34.416 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"108-zXR8h0Lw92HUg3FkxfoRQdV0NUk"
+2023-07-07 01:54:34.417 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:54:32 GMT
+2023-07-07 01:54:34.418 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:54:34.418 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:54:34.429 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:54:34.437 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:54:34.438 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-07 01:54:34.535 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-07 01:54:34.536 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-07 01:54:34.581 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-07 01:54:34.583 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-07 01:54:34.585 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-07 01:54:34.587 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-07 01:54:34.588 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-07 01:54:34.589 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms HTTP/1.1
+2023-07-07 01:54:34.591 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms HTTP/1.1[\r][\n]"
+2023-07-07 01:54:34.593 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-07 01:54:34.596 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-07 01:54:34.597 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-07 01:54:34.600 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-07 01:54:34.602 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-07 01:54:34.604 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-07 01:54:34.607 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms HTTP/1.1
+2023-07-07 01:54:34.610 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-07 01:54:34.612 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-07 01:54:34.614 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-07 01:54:34.615 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-07 01:54:34.617 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-07 01:54:34.677 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2023-07-07 01:54:34.679 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-07 01:54:34.681 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-07 01:54:34.684 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-07 01:54:34.685 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 53[\r][\n]"
+2023-07-07 01:54:34.688 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"35-XEFJvujIbPEmEuivDo+EjVeESg8"[\r][\n]"
+2023-07-07 01:54:34.689 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Thu, 06 Jul 2023 22:54:32 GMT[\r][\n]"
+2023-07-07 01:54:34.691 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-07 01:54:34.693 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-07 01:54:34.696 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-07 01:54:34.698 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 403 Forbidden
+2023-07-07 01:54:34.699 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 403 Forbidden
+2023-07-07 01:54:34.701 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-07 01:54:34.703 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-07 01:54:34.705 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-07 01:54:34.707 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 53
+2023-07-07 01:54:34.708 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"35-XEFJvujIbPEmEuivDo+EjVeESg8"
+2023-07-07 01:54:34.710 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Thu, 06 Jul 2023 22:54:32 GMT
+2023-07-07 01:54:34.712 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-07 01:54:34.713 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-07 01:54:34.716 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-07 01:54:34.718 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-07 01:54:34.720 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream

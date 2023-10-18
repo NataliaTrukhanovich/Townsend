@@ -1,0 +1,76 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "filterGroupName",
+      "filtersForPlatforms"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "filterGroupName": {
+        "type": "string"
+      },
+      "filtersForPlatforms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "inputType",
+            "placeholderFrom",
+            "placeholderTo",
+            "topPriority",
+            "filterName",
+            "descriptionLong",
+            "filterItemsForPlatforms"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "inputType": {
+              "type": "string"
+            },
+            "placeholderFrom": {
+              "type": ["string", "null"]
+            },
+            "placeholderTo": {
+              "type": ["string", "null"]
+            },
+            "topPriority": {
+              "type": "boolean"
+            },
+            "filterName": {
+              "type": "string"
+            },
+            "descriptionLong": {
+              "type": ["string", "null"]
+            },
+            "filterItemsForPlatforms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "filterItemName"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "filterItemName": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

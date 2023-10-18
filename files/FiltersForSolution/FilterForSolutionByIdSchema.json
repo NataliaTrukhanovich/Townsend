@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "inputType",
+    "topPriority",
+    "filterName",
+    "descriptionShort",
+    "descriptionLong",
+    "fileUrl",
+    "filterItemsForSolutions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "inputType": {
+      "type": "string"
+    },
+    "topPriority": {
+      "type": "boolean"
+    },
+    "filterName": {
+      "type": "string"
+    },
+    "descriptionShort": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "descriptionLong": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fileUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "filterItemsForSolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "filterItemName"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "filterItemName": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

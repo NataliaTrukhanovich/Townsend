@@ -1,0 +1,78 @@
+{
+  "type": "object",
+  "required": [
+    "numberOfPages",
+    "pageNumber",
+    "numberOfPlatformsPerPage",
+    "countRows",
+    "rows"
+  ],
+  "properties": {
+    "numberOfPages": {
+      "type": "integer"
+    },
+    "pageNumber": {
+      "type": "integer"
+    },
+    "numberOfPlatformsPerPage": {
+      "type": "integer"
+    },
+    "countRows": {
+      "type": "integer"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "isActive",
+          "name",
+          "description",
+          "urlWebsite",
+          "priceMin",
+          "priceMax",
+          "numberOfSolution",
+          "fileUrl",
+          "adminId",
+          "isFavorites"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "urlWebsite": {
+            "type": ["string", "null"]
+          },
+          "priceMin": {
+            "type": "integer"
+          },
+          "priceMax": {
+            "type": "integer"
+          },
+          "numberOfSolution": {
+            "type": "integer"
+          },
+          "fileUrl": {
+            "type": ["string", "null"]
+          },
+          "adminId": {
+            "type": "string"
+          },
+          "isFavorites": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

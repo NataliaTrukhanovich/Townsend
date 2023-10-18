@@ -1,0 +1,8 @@
+{
+  "name": "New Solution2",
+  "description": "Solution for example2",
+  "isActive": true,
+  "type": "string",
+  "priceMin": 1000,
+  "eventPlan": "string"
+}

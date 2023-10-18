@@ -1,0 +1,154 @@
+{
+  "type": "object",
+  "required": [
+    "platform",
+    "characteristics",
+    "solutions",
+    "reviews"
+  ],
+  "properties": {
+    "platform": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "fileUrl",
+        "urlWebsite",
+        "isFavorites"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "fileUrl": {
+          "type": ["string", "null"]
+        },
+        "urlWebsite": {
+          "type": ["string", "null"]
+        },
+        "isFavorites": {
+          "type": "boolean"
+        }
+      }
+    },
+    "characteristics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "filterGroupName",
+          "filtersForPlatforms"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "filterGroupName": {
+            "type": "string"
+          },
+          "filtersForPlatforms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "filterName",
+                "filterItemsForPlatforms"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "filterName": {
+                  "type": "string"
+                },
+                "filterItemsForPlatforms": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "filterItemName"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "filterItemName": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "solutions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "priceMin",
+                  "isFavorites"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "priceMin": {
+                    "type": "integer"
+                  },
+                  "isFavorites": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "reviews": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "date",
+                    "text",
+                    "author"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "date": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "author": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

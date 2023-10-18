@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "inputType",
+    "topPriority",
+    "filterName",
+    "descriptionShort",
+    "descriptionLong",
+    "fileUrl",
+    "createdAt",
+    "updatedAt",
+    "filterGroup",
+    "filterItemsForPlatforms"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "inputType": {
+      "type": "string"
+    },
+    "topPriority": {
+      "type": "boolean"
+    },
+    "filterName": {
+      "type": "string"
+    },
+    "descriptionShort": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "descriptionLong": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fileUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "filterGroup": {
+      "type": "object",
+      "required": [
+        "id",
+        "filterGroupName"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "filterGroupName": {
+          "type": "string"
+        }
+      }
+    },
+    "filterItemsForPlatforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "filterItemName"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "filterItemName": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

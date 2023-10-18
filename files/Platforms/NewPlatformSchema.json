@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "url"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "url": {
+      "type": ["string", "null"]
+
+    }
+  }
+}

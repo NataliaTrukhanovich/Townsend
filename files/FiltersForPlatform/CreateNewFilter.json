@@ -1,0 +1,13 @@
+{
+  "inputType": "checkbox",
+  "placeholderFrom": "string",
+  "placeholderTo": "string",
+  "topPriority": true,
+  "filterName": "New Filter 3",
+  "descriptionLong": "Webinars are powerful for generating leads.",
+  "filterGroupId": "c8c69dfd-931c-45a8-bee5-04bffbbb7e16",
+  "filterItemsName": [
+    "Filter Item 1",
+    "Filter Item 2"
+  ]
+}

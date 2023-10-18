@@ -1,0 +1,975 @@
+2023-07-25 15:23:47.612 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:47.650 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:47.781 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:47.785 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:47.786 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-25 15:23:47.789 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:47.790 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:47.791 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/auth/login HTTP/1.1
+2023-07-25 15:23:47.792 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/auth/login HTTP/1.1[\r][\n]"
+2023-07-25 15:23:47.796 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:47.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:47.798 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-07-25 15:23:47.800 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:47.801 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:47.802 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:47.803 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:47.805 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:47.807 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/auth/login HTTP/1.1
+2023-07-25 15:23:47.808 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:47.809 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:47.809 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-07-25 15:23:47.810 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:47.811 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:47.813 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:47.814 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:47.815 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-25 15:23:47.816 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "email": "SuperAdmin@mail.ru",[\r][\n]"
+2023-07-25 15:23:47.817 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "password": "SuperAdmin1!"[\r][\n]"
+2023-07-25 15:23:47.818 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:48.191 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-07-25 15:23:48.194 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:48.195 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:48.196 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5NTQ3MTgyNn0.ewZ-gKKdDELKdPK-7e5J9kcB4DygC7ChG-BHIlcL-y8; Path=/; HttpOnly; Secure[\r][\n]"
+2023-07-25 15:23:48.197 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:48.198 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 264[\r][\n]"
+2023-07-25 15:23:48.199 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"108-IKta+lX5CNaaiXDe1fMgCnexIQs"[\r][\n]"
+2023-07-25 15:23:48.200 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:46 GMT[\r][\n]"
+2023-07-25 15:23:48.201 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:48.202 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:48.203 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:48.205 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 201 Created
+2023-07-25 15:23:48.206 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 201 Created
+2023-07-25 15:23:48.208 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:48.209 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:48.210 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5NTQ3MTgyNn0.ewZ-gKKdDELKdPK-7e5J9kcB4DygC7ChG-BHIlcL-y8; Path=/; HttpOnly; Secure
+2023-07-25 15:23:48.211 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:48.211 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 264
+2023-07-25 15:23:48.213 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"108-IKta+lX5CNaaiXDe1fMgCnexIQs"
+2023-07-25 15:23:48.214 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:46 GMT
+2023-07-25 15:23:48.215 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:48.215 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:48.225 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:48.242 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:48.245 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:48.337 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"value":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o"}"
+2023-07-25 15:23:48.339 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1d9bd4da
+2023-07-25 15:23:48.340 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:50.286 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:50.287 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:50.399 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:50.400 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:50.400 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:50.401 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:50.402 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms HTTP/1.1
+2023-07-25 15:23:50.403 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms HTTP/1.1[\r][\n]"
+2023-07-25 15:23:50.404 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:50.405 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:50.405 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:50.406 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:50.407 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:50.408 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:50.409 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:50.409 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms HTTP/1.1
+2023-07-25 15:23:50.410 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:50.411 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:50.412 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:50.412 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:50.413 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:50.414 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:50.562 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:50.564 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:50.565 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:50.566 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:50.568 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 8304[\r][\n]"
+2023-07-25 15:23:50.569 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"2070-D6BvFLg/NIEUm2nnqBMB/hJg5dQ"[\r][\n]"
+2023-07-25 15:23:50.571 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:48 GMT[\r][\n]"
+2023-07-25 15:23:50.573 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:50.575 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:50.577 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:50.580 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:50.581 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:50.583 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:50.584 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:50.584 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:50.586 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 8304
+2023-07-25 15:23:50.587 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"2070-D6BvFLg/NIEUm2nnqBMB/hJg5dQ"
+2023-07-25 15:23:50.588 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:48 GMT
+2023-07-25 15:23:50.590 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:50.591 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:50.592 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:50.596 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:50.597 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:50.601 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[{"id":"35771ffc-86b5-4a59-945d-2e51c8a2aedc","isActive":true,"name":"Dog Platform","description":"description","urlWebsite":"http://google.com","priceMin":123,"priceMax":3213,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/cd8bb350-a9d8-4ab2-9db7-db7b632e68a2.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e285ae99-e21b-4b99-b718-c980bb6024bc","isActive":false,"name":"New platform name","description":"New platform description","urlWebsite":"http://node.twnsnd.online:32043/","priceMin":200,"priceMax":850,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/b72f6af7-3d2d-438d-b9f9-08a8995c556d.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"2480641f-d798-4f2b-9849-a5b770ba3b5f","isActive":false,"name":"Super platform","description":"[0xd0][0x9f][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xb2][0xd1][0x81][0xd0][0xb5][0xd0][0xb3][0xd0][0xbe] [0xd0][0xbd][0xd0][0xb0] [0xd1][0x81][0xd0][0xb2][0xd0][0xb5][0xd1][0x82][0xd0][0xb5]. [0xd0][0xa3][0xd0][0xbd][0xd0][0xb8][0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd1][0x81][0xd0][0xb0][0xd0][0xbb][0xd1][0x8c][0xd0][0xbd][0xd0][0xbe][0xd0][0xb5] [0xd1][0x80][0xd0][0xb5][0xd1][0x88][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]!","urlWebsite":"google.com","priceMin":50,"priceMax":100,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/4ea2c72f-5849-40ca-9c21-44f29ca226e0.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e22c18c8-4e94-4e6e-bf55-c9fb63b154b6","isActive":true,"name":"platform name 028","description":"platform description 028","urlWebsite":"http://node.twnsnd.online:32043/","priceMin":300,"priceMax":600,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/61800d9b-cbe5-4aeb-a30f-5d5b71b32a74.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"a33ff1a3-9875-410b-a9a7-c67008d8d96e","isActive":false,"name":"scsd","description":"scscsd","urlWebsite":"sdcs","priceMin":12,"priceMax":12,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/a9a0cbbb-d8d7-4c32-9a0e-804a0f8ae450.jpg","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"3221cc73-b00f-464c-a9ff-72edf6a6cd90","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 11","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=74327","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"acc7b4cc-4dd5-49a7-9dab-3af133086224","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 12","description":"Single-channel platform for creating chatbots","urlWebsite":"https://docs.nestjs.com/pipes#built-in-pipes","priceMin":100,"priceMax":900,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=17783","adminId":"407252ed-"
+2023-07-25 15:23:50.618 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "a806-457f-bef5-c286118c4199"},{"id":"4ef9b8cc-1b4e-4d28-a7ca-ecf1a917848f","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 13","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"a2d6ffb8-4722-4a2d-8d90-0f576b29b3ce","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 2","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e8d5223c-0d7e-472a-a5e8-7b363c7b50e7","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 3[0xd0][0xab]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"cc4ec470-5308-42e6-a2be-cbe0f522a115","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 5","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=24702","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"82d90955-5e0c-45c1-82df-7ef64506b9f0","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 6","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c71c98c6-33aa-4cdd-87ab-32e83ccd99ac","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 7","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e0d8b4d0-8616-48b8-9f4e-8100cc2c7abe","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 8","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"58a199ca-a6bc-4bce-bda0-05826135542d","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 9","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"09f9daf5-f21e-4239-8306-891258be16ce","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"f47c6734-b58e-4888-b1a1-14c392c56fe6","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=61905","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c3ebc68e-6f13-4468"
+2023-07-25 15:23:50.619 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "-8079-ac8ab9fc8015","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"12a3be3e-25fe-4f6c-9433-ef58e548b296","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"f1ba59b0-e16c-4c6e-b43f-a98a275498e4","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"4fa26997-e271-4ae1-92d6-36714143f4b2","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e56d146a-0d85-402b-a58f-e472112e3026","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=25116","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"7e4a2b48-9b69-4df3-81be-7b925462a30e","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c52836cd-e7e8-4e6b-bf66-832c9c445c86","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=66223","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"123ec897-22dd-41cc-9067-282d38b8c74b","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"Single-channel platform for creating chatbots","urlWebsite":"https://docs.nestjs.com/pipes#built-in-pipes","priceMin":100,"priceMax":900,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=89796","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"677465d6-675a-4b50-aa91-05d176a4c075","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=48248","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=40512","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"888276ee-1dcd-44d6-bc1b-80651209b7a1","isActive":false,"name":"[0xd0][0xa2][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0]","description":"[0xd0][0xbe][0xd0][0xbf][0xd0][0xb8][0xd1][0x81][0xd0][0xb0][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]","urlWebsite":"[0xd0][0xbd][0xd0][0xb5][0xd1][0x82] [0xd1][0x81][0xd1][0x81][0xd1][0x8b][0xd0][0xbb][0xd0][0xba][0xd0][0xb8]","priceMin":123,"priceMax":3213,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/39bb1016-fdf4-49f1-9043-5d5595865f42.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"}]"
+2023-07-25 15:23:50.621 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7645f03e
+2023-07-25 15:23:50.623 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:50.917 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:50.918 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:51.036 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:51.036 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:51.037 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:51.038 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:51.039 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/users/info HTTP/1.1
+2023-07-25 15:23:51.039 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/users/info HTTP/1.1[\r][\n]"
+2023-07-25 15:23:51.041 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:51.042 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:51.044 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:51.050 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:51.051 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:51.052 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:51.053 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:51.053 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/users/info HTTP/1.1
+2023-07-25 15:23:51.054 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:51.055 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:51.056 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:51.057 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:51.058 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:51.060 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:51.172 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:51.173 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:51.174 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:51.175 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:51.176 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 526[\r][\n]"
+2023-07-25 15:23:51.176 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"20e-nz7fxIAq6Cxlt3c1XEx6GO3/z7w"[\r][\n]"
+2023-07-25 15:23:51.177 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:49 GMT[\r][\n]"
+2023-07-25 15:23:51.178 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:51.179 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:51.179 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:51.180 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:51.182 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:51.182 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:51.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:51.184 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:51.184 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 526
+2023-07-25 15:23:51.185 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"20e-nz7fxIAq6Cxlt3c1XEx6GO3/z7w"
+2023-07-25 15:23:51.186 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:49 GMT
+2023-07-25 15:23:51.187 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:51.187 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:51.188 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:51.189 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:51.189 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:51.207 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"id":"407252ed-a806-457f-bef5-c286118c4199","email":"SuperAdmin@mail.ru","name":"SuperAdmin","fullname":"SuperAdmin","telegram":null,"phone":null,"storageTimeForFavoritePlatforms":30,"numberOfFavoritePlatforms":10,"storageTimeForFavoriteSolutions":30,"numberOfFavoriteSolutions":10,"createdAt":"2023-07-06T22:48:52.912Z","updatedAt":"2023-07-19T16:29:01.274Z","role":{"id":"ae799013-21b6-48e1-9ab7-5a040f5028f9","role":"SuperAdmin"},"file":{"url":"node.twnsnd.online/uploads/7-2023/2f22a659-55dc-4aad-bb74-6f952e5d7d9e.png"}}"
+2023-07-25 15:23:51.208 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4a9860
+2023-07-25 15:23:51.208 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:51.249 [main] PlatformOtherOperationsTests.getUserId(PlatformOtherOperationsTests.java:279) - USER ID:  407252ed-a806-457f-bef5-c286118c4199
+2023-07-25 15:23:51.453 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:51.454 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:51.561 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:51.564 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:51.565 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:51.567 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:51.569 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms?type=asc HTTP/1.1
+2023-07-25 15:23:51.570 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms?type=asc HTTP/1.1[\r][\n]"
+2023-07-25 15:23:51.573 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2023-07-25 15:23:51.576 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:51.579 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:51.582 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:51.584 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:51.587 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:51.589 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:51.591 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:51.595 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms?type=asc HTTP/1.1
+2023-07-25 15:23:51.597 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2023-07-25 15:23:51.600 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:51.602 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:51.605 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:51.607 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:51.611 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:51.614 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:51.755 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:51.756 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:51.758 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:51.758 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:51.759 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 8304[\r][\n]"
+2023-07-25 15:23:51.760 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"2070-D6BvFLg/NIEUm2nnqBMB/hJg5dQ"[\r][\n]"
+2023-07-25 15:23:51.760 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:49 GMT[\r][\n]"
+2023-07-25 15:23:51.761 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:51.762 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:51.763 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:51.763 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:51.763 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:51.765 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:51.765 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:51.765 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:51.766 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 8304
+2023-07-25 15:23:51.767 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"2070-D6BvFLg/NIEUm2nnqBMB/hJg5dQ"
+2023-07-25 15:23:51.767 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:49 GMT
+2023-07-25 15:23:51.768 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:51.768 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:51.770 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:51.770 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:51.770 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:52.191 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection.close(DefaultClientConnection.java:180) - Connection 0.0.0.0:14549<->135.181.201.109:31033 closed
+2023-07-25 15:23:52.195 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection.close(DefaultClientConnection.java:180) - Connection 0.0.0.0:14559<->135.181.201.109:31033 closed
+2023-07-25 15:23:52.197 [Finalizer] org.apache.http.impl.conn.DefaultClientConnection.close(DefaultClientConnection.java:180) - Connection 0.0.0.0:14556<->135.181.201.109:31033 closed
+2023-07-25 15:23:52.298 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[{"id":"35771ffc-86b5-4a59-945d-2e51c8a2aedc","isActive":true,"name":"Dog Platform","description":"description","urlWebsite":"http://google.com","priceMin":123,"priceMax":3213,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/cd8bb350-a9d8-4ab2-9db7-db7b632e68a2.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e285ae99-e21b-4b99-b718-c980bb6024bc","isActive":false,"name":"New platform name","description":"New platform description","urlWebsite":"http://node.twnsnd.online:32043/","priceMin":200,"priceMax":850,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/b72f6af7-3d2d-438d-b9f9-08a8995c556d.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"2480641f-d798-4f2b-9849-a5b770ba3b5f","isActive":false,"name":"Super platform","description":"[0xd0][0x9f][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xb2][0xd1][0x81][0xd0][0xb5][0xd0][0xb3][0xd0][0xbe] [0xd0][0xbd][0xd0][0xb0] [0xd1][0x81][0xd0][0xb2][0xd0][0xb5][0xd1][0x82][0xd0][0xb5]. [0xd0][0xa3][0xd0][0xbd][0xd0][0xb8][0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd1][0x81][0xd0][0xb0][0xd0][0xbb][0xd1][0x8c][0xd0][0xbd][0xd0][0xbe][0xd0][0xb5] [0xd1][0x80][0xd0][0xb5][0xd1][0x88][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]!","urlWebsite":"google.com","priceMin":50,"priceMax":100,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/4ea2c72f-5849-40ca-9c21-44f29ca226e0.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e22c18c8-4e94-4e6e-bf55-c9fb63b154b6","isActive":true,"name":"platform name 028","description":"platform description 028","urlWebsite":"http://node.twnsnd.online:32043/","priceMin":300,"priceMax":600,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/61800d9b-cbe5-4aeb-a30f-5d5b71b32a74.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"a33ff1a3-9875-410b-a9a7-c67008d8d96e","isActive":false,"name":"scsd","description":"scscsd","urlWebsite":"sdcs","priceMin":12,"priceMax":12,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/a9a0cbbb-d8d7-4c32-9a0e-804a0f8ae450.jpg","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"3221cc73-b00f-464c-a9ff-72edf6a6cd90","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 11","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=74327","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"acc7b4cc-4dd5-49a7-9dab-3af133086224","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 12","description":"Single-channel platform for creating chatbots","urlWebsite":"https://docs.nestjs.com/pipes#built-in-pipes","priceMin":100,"priceMax":900,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=17783","adminId":"407252ed-"
+2023-07-25 15:23:52.300 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "a806-457f-bef5-c286118c4199"},{"id":"4ef9b8cc-1b4e-4d28-a7ca-ecf1a917848f","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 13","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"a2d6ffb8-4722-4a2d-8d90-0f576b29b3ce","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 2","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e8d5223c-0d7e-472a-a5e8-7b363c7b50e7","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 3[0xd0][0xab]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"cc4ec470-5308-42e6-a2be-cbe0f522a115","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 5","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=24702","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"82d90955-5e0c-45c1-82df-7ef64506b9f0","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 6","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c71c98c6-33aa-4cdd-87ab-32e83ccd99ac","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 7","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e0d8b4d0-8616-48b8-9f4e-8100cc2c7abe","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 8","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"58a199ca-a6bc-4bce-bda0-05826135542d","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 9","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"09f9daf5-f21e-4239-8306-891258be16ce","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"f47c6734-b58e-4888-b1a1-14c392c56fe6","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=61905","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c3ebc68e-6f13-4468-8079-ac8ab9fc8015","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"12a3be3e-25fe-4f6c-9433-ef58e548b296","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"f1ba59b0-e16c-4c6e-b43f-a98a275498e4","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"4fa26997-e271-4ae1-92d6-36714143f4b2","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e56d146a-0d85-402b-a58f-e472112e3026","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=25116","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"7e4a2b48-9b69-4df3-81be-7b925462a30e","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c52836cd-e7e8-4e6b-bf66-832c9c445c86","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=66223","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"123ec897-22dd-41cc-9067-282d38b8c74b","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"Single-channel platform for creating chatbots","urlWebsite":"https://docs.nestjs.com/pipes#built-in-pipes","priceMin":100,"priceMax":900,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=89796","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"677465d6-675a-4b50-aa91-05d176a4c075","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=48248","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=40512","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"888276ee-1dcd-44d6-bc1b-80651209b7a1","isActive":false,"name":"[0xd0][0xa2][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0]","description":"[0xd0][0xbe][0xd0][0xbf][0xd0][0xb8][0xd1][0x81][0xd0][0xb0][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]","urlWebsite":"[0xd0][0xbd][0xd0][0xb5][0xd1][0x82] [0xd1][0x81][0xd1][0x81][0xd1][0x8b][0xd0][0xbb][0xd0][0xba][0xd0][0xb8]","priceMin":123,"priceMax":3213,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/39bb1016-fdf4-49f1-9043-5d5595865f42.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"}]"
+2023-07-25 15:23:52.301 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@57186526
+2023-07-25 15:23:52.303 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:52.495 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:52.496 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:52.593 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:52.595 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:52.596 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:52.597 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:52.598 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms?type=desc HTTP/1.1
+2023-07-25 15:23:52.599 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms?type=desc HTTP/1.1[\r][\n]"
+2023-07-25 15:23:52.600 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2023-07-25 15:23:52.601 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:52.602 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:52.603 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:52.604 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:52.605 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:52.607 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:52.607 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:52.608 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms?type=desc HTTP/1.1
+2023-07-25 15:23:52.610 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2023-07-25 15:23:52.611 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:52.611 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:52.612 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:52.613 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:52.613 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:52.614 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:53.000 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:53.002 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:53.004 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:53.006 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:53.010 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 8304[\r][\n]"
+2023-07-25 15:23:53.012 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"2070-Y3jKuOgww3enrlEYeLK2+l4HSsk"[\r][\n]"
+2023-07-25 15:23:53.015 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:50 GMT[\r][\n]"
+2023-07-25 15:23:53.018 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:53.020 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:53.023 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:53.025 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:53.028 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:53.030 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:53.032 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:53.033 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:53.035 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 8304
+2023-07-25 15:23:53.037 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"2070-Y3jKuOgww3enrlEYeLK2+l4HSsk"
+2023-07-25 15:23:53.038 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:50 GMT
+2023-07-25 15:23:53.040 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:53.041 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:53.046 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:53.047 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:53.050 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:53.072 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[{"id":"888276ee-1dcd-44d6-bc1b-80651209b7a1","isActive":false,"name":"[0xd0][0xa2][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0]","description":"[0xd0][0xbe][0xd0][0xbf][0xd0][0xb8][0xd1][0x81][0xd0][0xb0][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]","urlWebsite":"[0xd0][0xbd][0xd0][0xb5][0xd1][0x82] [0xd1][0x81][0xd1][0x81][0xd1][0x8b][0xd0][0xbb][0xd0][0xba][0xd0][0xb8]","priceMin":123,"priceMax":3213,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/39bb1016-fdf4-49f1-9043-5d5595865f42.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"677465d6-675a-4b50-aa91-05d176a4c075","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=48248","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=40512","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"123ec897-22dd-41cc-9067-282d38b8c74b","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82] 4","description":"Single-channel platform for creating chatbots","urlWebsite":"https://docs.nestjs.com/pipes#built-in-pipes","priceMin":100,"priceMax":900,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=89796","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"09f9daf5-f21e-4239-8306-891258be16ce","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"f47c6734-b58e-4888-b1a1-14c392c56fe6","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=61905","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c3ebc68e-6f13-4468-8079-ac8ab9fc8015","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"12a3be3e-25fe-4f6c-9433-ef58e548b296","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"f1ba59b0-e16c-4c6e-b43f-a98a275498e4","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0]"
+2023-07-25 15:23:53.078 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"4fa26997-e271-4ae1-92d6-36714143f4b2","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e56d146a-0d85-402b-a58f-e472112e3026","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=25116","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"7e4a2b48-9b69-4df3-81be-7b925462a30e","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c52836cd-e7e8-4e6b-bf66-832c9c445c86","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd1][0x82][0xd0][0xb5][0xd1][0x81][0xd1][0x82]","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=66223","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"58a199ca-a6bc-4bce-bda0-05826135542d","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 9","des"
+2023-07-25 15:23:53.140 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "cription":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e0d8b4d0-8616-48b8-9f4e-8100cc2c7abe","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 8","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"c71c98c6-33aa-4cdd-87ab-32e83ccd99ac","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 7","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"82d90955-5e0c-45c1-82df-7ef64506b9f0","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 6","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"cc4ec470-5308-42e6-a2be-cbe0f522a115","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 5","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=24702","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e8d5223c-0d7e-472a-a5e8-7b363c7b50e7","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 3[0xd0][0xab]","description":"strin"
+2023-07-25 15:23:53.148 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "g","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"a2d6ffb8-4722-4a2d-8d90-0f576b29b3ce","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 2","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"4ef9b8cc-1b4e-4d28-a7ca-ecf1a917848f","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 13","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"acc7b4cc-4dd5-49a7-9dab-3af133086224","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 12","description":"Single-channel platform for creating chatbots","urlWebsite":"https://docs.nestjs.com/pipes#built-in-pipes","priceMin":100,"priceMax":900,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=17783","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"3221cc73-b00f-464c-a9ff-72edf6a6cd90","isActive":false,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 11","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":"https://loremflickr.com/50/50/abstract?lock=74327","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"a33ff1a3-9875-410b-a9a7-c67008d8d96e","isActive":false,"name":"scsd","description":"scscsd","urlWebsite":"sdcs","priceMin":12,"priceMax":12,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/a9a0cbbb-d8d7-4c32-9a0e-804a0f8ae450.jpg","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e22c18c8-4e94-4e6e-bf55-c9fb63b154b6","isActive":true,"name":"platform name 028","description":"platform description 028","urlWebsite":"http://node.twnsnd.online:32043/","priceMin":300,"priceMax":600,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/61800d9b-cbe5-4aeb-a30f-5d5b71b32a74.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"2480641f-d798-4f2b-9849-a5b770ba3b5f","isActive":false,"name":"Super platform","description":"[0xd0][0x9f][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xb2][0xd1][0x81][0xd0][0xb5][0xd0][0xb3][0xd0][0xbe] [0xd0][0xbd][0xd0][0xb0] [0xd1][0x81][0xd0][0xb2][0xd0][0xb5][0xd1][0x82][0xd0][0xb5]. [0xd0][0xa3][0xd0][0xbd][0xd0][0xb8][0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd1][0x81][0xd0][0xb0][0xd0][0xbb][0xd1][0x8c][0xd0][0xbd][0xd0][0xbe][0xd0][0xb5] [0xd1][0x80][0xd0][0xb5][0xd1][0x88][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]!","urlWebsite":"google.com","priceMin":50,"priceMax":100,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/4ea2c72f-5849-40ca-9c21-44f29ca226e0.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"e285ae99-e21b-4b99-b718-c980bb6024bc","isActive":false,"name":"New platform name","description":"New platform description","urlWebsite":"http://node.twnsnd.online:32043/","priceMin":200,"priceMax":850,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/b72f6af7-3"
+2023-07-25 15:23:53.149 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "d2d-438d-b9f9-08a8995c556d.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"},{"id":"35771ffc-86b5-4a59-945d-2e51c8a2aedc","isActive":true,"name":"Dog Platform","description":"description","urlWebsite":"http://google.com","priceMin":123,"priceMax":3213,"numberOfSolution":0,"fileUrl":"node.twnsnd.online/uploads/7-2023/cd8bb350-a9d8-4ab2-9db7-db7b632e68a2.png","adminId":"407252ed-a806-457f-bef5-c286118c4199"}]"
+2023-07-25 15:23:53.150 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@43c7fe8a
+2023-07-25 15:23:53.150 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:53.201 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:53.201 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:53.270 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:53.272 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:53.273 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:53.274 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:53.276 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/favorites HTTP/1.1
+2023-07-25 15:23:53.277 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/favorites HTTP/1.1[\r][\n]"
+2023-07-25 15:23:53.279 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:53.280 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:53.280 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:53.281 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 52[\r][\n]"
+2023-07-25 15:23:53.281 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:53.282 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:53.282 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:53.283 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:53.283 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:53.284 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/favorites HTTP/1.1
+2023-07-25 15:23:53.286 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:53.287 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:53.289 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:53.290 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 52
+2023-07-25 15:23:53.291 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:53.292 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:53.294 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:53.295 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:53.295 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:53.296 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> ""userId": "407252ed-a806-457f-bef5-c286118c4199"[\n]"
+2023-07-25 15:23:53.297 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:53.423 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:53.427 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:53.430 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:53.434 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:53.440 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 101[\r][\n]"
+2023-07-25 15:23:53.446 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"65-id4g59e6Ygn4b6CgdOjteayPq7M"[\r][\n]"
+2023-07-25 15:23:53.448 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:51 GMT[\r][\n]"
+2023-07-25 15:23:53.450 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:53.453 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:53.455 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:53.457 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:53.461 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:53.463 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:53.470 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:53.481 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:53.487 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 101
+2023-07-25 15:23:53.490 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"65-id4g59e6Ygn4b6CgdOjteayPq7M"
+2023-07-25 15:23:53.495 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:51 GMT
+2023-07-25 15:23:53.498 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:53.501 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:53.511 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:53.515 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:53.517 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:53.536 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"userId":"407252ed-a806-457f-bef5-c286118c4199","platformId":"e285ae99-e21b-4b99-b718-c980bb6024bc"}"
+2023-07-25 15:23:53.537 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@66e341e9
+2023-07-25 15:23:53.539 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:53.647 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:53.648 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:53.751 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:53.753 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:53.755 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:53.756 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:53.757 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc1/favorites HTTP/1.1
+2023-07-25 15:23:53.761 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc1/favorites HTTP/1.1[\r][\n]"
+2023-07-25 15:23:53.762 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:53.763 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:53.764 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:53.767 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 52[\r][\n]"
+2023-07-25 15:23:53.768 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:53.769 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:53.770 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:53.773 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:53.774 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:53.777 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc1/favorites HTTP/1.1
+2023-07-25 15:23:53.778 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:53.779 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:53.780 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:53.781 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 52
+2023-07-25 15:23:53.782 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:53.783 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:53.785 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:53.785 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:53.787 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:53.788 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> ""userId": "407252ed-a806-457f-bef5-c286118c4199"[\n]"
+2023-07-25 15:23:53.789 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:53.900 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:53.900 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:53.901 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:53.902 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:53.903 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 89[\r][\n]"
+2023-07-25 15:23:53.903 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"[\r][\n]"
+2023-07-25 15:23:53.904 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:51 GMT[\r][\n]"
+2023-07-25 15:23:53.905 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:53.906 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:53.906 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:53.907 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:53.908 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:53.909 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:53.909 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:53.910 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:53.911 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 89
+2023-07-25 15:23:53.912 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"
+2023-07-25 15:23:53.912 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:51 GMT
+2023-07-25 15:23:53.913 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:53.913 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:53.915 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:53.915 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:53.916 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:53.918 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":"Validation failed (uuid is expected)","error":"Bad Request"}"
+2023-07-25 15:23:53.918 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@64279ab
+2023-07-25 15:23:53.919 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:53.956 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:53.957 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:54.050 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:54.051 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:54.052 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:54.053 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:54.054 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/favorites HTTP/1.1
+2023-07-25 15:23:54.054 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/favorites HTTP/1.1[\r][\n]"
+2023-07-25 15:23:54.055 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:54.056 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:54.059 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:54.060 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 53[\r][\n]"
+2023-07-25 15:23:54.062 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:54.063 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:54.064 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:54.065 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:54.066 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:54.067 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/favorites HTTP/1.1
+2023-07-25 15:23:54.069 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:54.070 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:54.071 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:54.073 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 53
+2023-07-25 15:23:54.074 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:54.075 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:54.076 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:54.077 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:54.079 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:54.080 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> ""userId": "407252ed-a806-457f-bef5-c286118c41991"[\n]"
+2023-07-25 15:23:54.081 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:54.194 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:54.195 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:54.195 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:54.196 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:54.197 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 76[\r][\n]"
+2023-07-25 15:23:54.197 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"4c-kC0Z0wwhqw01IEVM3VBT535RLxw"[\r][\n]"
+2023-07-25 15:23:54.198 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:52 GMT[\r][\n]"
+2023-07-25 15:23:54.198 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:54.199 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:54.200 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:54.200 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:54.201 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:54.201 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:54.202 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:54.203 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:54.203 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 76
+2023-07-25 15:23:54.204 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"4c-kC0Z0wwhqw01IEVM3VBT535RLxw"
+2023-07-25 15:23:54.205 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:52 GMT
+2023-07-25 15:23:54.205 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:54.206 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:54.207 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:54.208 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:54.208 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:54.213 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":["userId must be a UUID"],"error":"Bad Request"}"
+2023-07-25 15:23:54.213 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@224d86d2
+2023-07-25 15:23:54.214 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:54.251 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:54.252 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:54.335 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:54.336 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:54.337 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:54.337 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:54.339 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms/favorites HTTP/1.1
+2023-07-25 15:23:54.340 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms/favorites HTTP/1.1[\r][\n]"
+2023-07-25 15:23:54.341 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:54.342 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:54.343 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:54.344 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:54.344 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:54.345 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:54.346 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:54.346 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms/favorites HTTP/1.1
+2023-07-25 15:23:54.347 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:54.348 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:54.348 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:54.349 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:54.349 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:54.350 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:54.450 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:54.451 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:54.452 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:54.453 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:54.453 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 89[\r][\n]"
+2023-07-25 15:23:54.454 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"[\r][\n]"
+2023-07-25 15:23:54.455 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:52 GMT[\r][\n]"
+2023-07-25 15:23:54.455 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:54.455 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:54.456 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:54.457 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:54.457 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:54.458 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:54.459 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:54.460 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:54.460 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 89
+2023-07-25 15:23:54.461 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"
+2023-07-25 15:23:54.461 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:52 GMT
+2023-07-25 15:23:54.462 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:54.462 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:54.463 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:54.463 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:54.464 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:54.465 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":"Validation failed (uuid is expected)","error":"Bad Request"}"
+2023-07-25 15:23:54.465 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4a22e4d7
+2023-07-25 15:23:54.466 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:54.600 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:54.602 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:54.716 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:54.717 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:54.719 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:54.721 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:54.721 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/viewed HTTP/1.1
+2023-07-25 15:23:54.722 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/viewed HTTP/1.1[\r][\n]"
+2023-07-25 15:23:54.723 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:54.724 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:54.725 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:54.725 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 52[\r][\n]"
+2023-07-25 15:23:54.726 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:54.727 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:54.727 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:54.728 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:54.729 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:54.730 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/viewed HTTP/1.1
+2023-07-25 15:23:54.731 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:54.732 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:54.733 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:54.733 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 52
+2023-07-25 15:23:54.734 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:54.734 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:54.735 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:54.735 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:54.735 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:54.736 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> ""userId": "407252ed-a806-457f-bef5-c286118c4199"[\n]"
+2023-07-25 15:23:54.736 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:54.887 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:54.889 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:54.892 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:54.894 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:54.895 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 101[\r][\n]"
+2023-07-25 15:23:54.896 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"65-id4g59e6Ygn4b6CgdOjteayPq7M"[\r][\n]"
+2023-07-25 15:23:54.897 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:52 GMT[\r][\n]"
+2023-07-25 15:23:54.898 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:54.899 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:54.900 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:54.902 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:54.904 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:54.905 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:54.907 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:54.908 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:54.909 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 101
+2023-07-25 15:23:54.910 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"65-id4g59e6Ygn4b6CgdOjteayPq7M"
+2023-07-25 15:23:54.911 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:52 GMT
+2023-07-25 15:23:54.912 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:54.913 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:54.914 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:54.915 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:54.916 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:54.931 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"userId":"407252ed-a806-457f-bef5-c286118c4199","platformId":"e285ae99-e21b-4b99-b718-c980bb6024bc"}"
+2023-07-25 15:23:54.932 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@27f71195
+2023-07-25 15:23:54.933 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:54.955 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:54.955 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:55.055 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:55.056 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:55.057 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:55.058 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:55.059 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc1/viewed HTTP/1.1
+2023-07-25 15:23:55.059 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc1/viewed HTTP/1.1[\r][\n]"
+2023-07-25 15:23:55.060 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:55.060 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:55.061 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:55.061 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 52[\r][\n]"
+2023-07-25 15:23:55.061 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:55.062 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:55.062 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:55.063 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:55.063 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:55.063 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc1/viewed HTTP/1.1
+2023-07-25 15:23:55.064 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:55.064 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:55.064 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:55.064 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 52
+2023-07-25 15:23:55.065 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:55.065 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:55.065 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:55.066 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:55.066 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:55.066 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> ""userId": "407252ed-a806-457f-bef5-c286118c4199"[\n]"
+2023-07-25 15:23:55.067 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:55.204 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:55.205 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:55.208 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:55.210 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:55.212 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 89[\r][\n]"
+2023-07-25 15:23:55.213 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"[\r][\n]"
+2023-07-25 15:23:55.214 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:53 GMT[\r][\n]"
+2023-07-25 15:23:55.215 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:55.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:55.219 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:55.220 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:55.221 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:55.221 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:55.222 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:55.222 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:55.223 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 89
+2023-07-25 15:23:55.224 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"
+2023-07-25 15:23:55.225 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:53 GMT
+2023-07-25 15:23:55.226 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:55.227 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:55.229 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:55.231 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:55.232 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:55.235 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":"Validation failed (uuid is expected)","error":"Bad Request"}"
+2023-07-25 15:23:55.236 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4fb57fb3
+2023-07-25 15:23:55.236 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:55.271 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:55.272 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:55.341 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:55.341 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:55.342 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:55.343 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:55.344 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/viewed HTTP/1.1
+2023-07-25 15:23:55.344 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/viewed HTTP/1.1[\r][\n]"
+2023-07-25 15:23:55.345 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:55.345 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:55.346 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:55.346 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 53[\r][\n]"
+2023-07-25 15:23:55.346 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:55.347 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:55.347 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:55.348 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:55.348 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:55.349 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/e285ae99-e21b-4b99-b718-c980bb6024bc/viewed HTTP/1.1
+2023-07-25 15:23:55.349 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:55.350 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:55.350 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:55.351 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 53
+2023-07-25 15:23:55.351 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:55.351 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:55.351 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:55.353 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:55.353 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:55.353 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> ""userId": "407252ed-a806-457f-bef5-c286118c41991"[\n]"
+2023-07-25 15:23:55.354 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:55.465 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:55.466 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:55.467 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:55.468 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:55.469 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 76[\r][\n]"
+2023-07-25 15:23:55.470 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"4c-kC0Z0wwhqw01IEVM3VBT535RLxw"[\r][\n]"
+2023-07-25 15:23:55.471 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:53 GMT[\r][\n]"
+2023-07-25 15:23:55.471 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:55.473 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:55.475 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:55.476 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:55.477 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:55.477 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:55.479 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:55.479 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:55.480 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 76
+2023-07-25 15:23:55.481 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"4c-kC0Z0wwhqw01IEVM3VBT535RLxw"
+2023-07-25 15:23:55.481 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:53 GMT
+2023-07-25 15:23:55.482 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:55.483 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:55.483 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:55.484 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:55.485 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:55.487 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":["userId must be a UUID"],"error":"Bad Request"}"
+2023-07-25 15:23:55.488 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@712e787e
+2023-07-25 15:23:55.488 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:55.552 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:55.553 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:55.632 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:55.633 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:55.634 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:55.634 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:55.635 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/platforms/viewed HTTP/1.1
+2023-07-25 15:23:55.636 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/platforms/viewed HTTP/1.1[\r][\n]"
+2023-07-25 15:23:55.636 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:55.637 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:55.638 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:55.639 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:55.639 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:55.641 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:55.641 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:55.642 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/platforms/viewed HTTP/1.1
+2023-07-25 15:23:55.643 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:55.644 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:55.645 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:55.645 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:55.646 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:55.646 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:55.731 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:55.732 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:55.734 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:55.736 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:55.737 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 89[\r][\n]"
+2023-07-25 15:23:55.738 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"[\r][\n]"
+2023-07-25 15:23:55.740 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:53 GMT[\r][\n]"
+2023-07-25 15:23:55.742 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:55.744 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:55.746 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:55.748 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:55.750 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:55.752 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:55.754 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:55.756 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:55.758 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 89
+2023-07-25 15:23:55.760 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"
+2023-07-25 15:23:55.763 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:53 GMT
+2023-07-25 15:23:55.764 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:55.766 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:55.769 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:55.771 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:55.773 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:55.892 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:55.893 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:55.973 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:55.973 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:55.973 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:55.974 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:55.975 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/3221cc73-b00f-464c-a9ff-72edf6a6cd90/filters HTTP/1.1
+2023-07-25 15:23:55.975 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/3221cc73-b00f-464c-a9ff-72edf6a6cd90/filters HTTP/1.1[\r][\n]"
+2023-07-25 15:23:55.975 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:55.976 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:55.976 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:55.977 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 120[\r][\n]"
+2023-07-25 15:23:55.978 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:55.978 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:55.978 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:55.979 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:55.980 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:55.980 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/3221cc73-b00f-464c-a9ff-72edf6a6cd90/filters HTTP/1.1
+2023-07-25 15:23:55.980 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:55.980 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:55.981 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:55.981 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 120
+2023-07-25 15:23:55.982 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:55.983 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:55.983 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:55.984 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:55.985 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-25 15:23:55.985 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "idFilterItems": [[\r][\n]"
+2023-07-25 15:23:55.985 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "d39d6e49-cb3f-4359-a24d-2f6477fdce18",[\r][\n]"
+2023-07-25 15:23:55.986 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "311cf57b-f7af-430e-9bec-8a3c84370f48"[\r][\n]"
+2023-07-25 15:23:55.986 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  ][\r][\n]"
+2023-07-25 15:23:55.987 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:56.081 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:56.082 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:56.082 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:56.083 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:56.084 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 149[\r][\n]"
+2023-07-25 15:23:56.084 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"95-ZbNenRxGPKxCr3f1wTwIV2Aw4Eg"[\r][\n]"
+2023-07-25 15:23:56.085 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:54 GMT[\r][\n]"
+2023-07-25 15:23:56.086 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:56.086 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:56.087 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:56.087 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:56.088 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:56.089 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:56.090 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:56.091 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:56.091 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 149
+2023-07-25 15:23:56.092 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"95-ZbNenRxGPKxCr3f1wTwIV2Aw4Eg"
+2023-07-25 15:23:56.092 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:54 GMT
+2023-07-25 15:23:56.093 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:56.093 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:56.095 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:56.095 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:56.096 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:56.097 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"platformId":"3221cc73-b00f-464c-a9ff-72edf6a6cd90","idFilterItems":["d39d6e49-cb3f-4359-a24d-2f6477fdce18","311cf57b-f7af-430e-9bec-8a3c84370f48"]}"
+2023-07-25 15:23:56.098 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@99a8de3
+2023-07-25 15:23:56.098 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:56.114 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:56.115 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:56.193 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:56.193 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:56.194 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:56.195 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:56.195 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec/filters HTTP/1.1
+2023-07-25 15:23:56.196 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec/filters HTTP/1.1[\r][\n]"
+2023-07-25 15:23:56.198 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:56.199 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:56.200 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:56.201 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 120[\r][\n]"
+2023-07-25 15:23:56.201 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:56.201 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:56.202 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:56.203 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:56.203 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:56.203 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec/filters HTTP/1.1
+2023-07-25 15:23:56.203 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:56.204 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:56.205 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:56.205 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 120
+2023-07-25 15:23:56.205 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:56.207 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:56.208 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:56.208 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:56.208 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-25 15:23:56.209 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "idFilterItems": [[\r][\n]"
+2023-07-25 15:23:56.209 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "d39d6e49-cb3f-4359-a24d-2f6477fdce18",[\r][\n]"
+2023-07-25 15:23:56.209 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "311cf57b-f7af-430e-9bec-8a3c84370f48"[\r][\n]"
+2023-07-25 15:23:56.209 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  ][\r][\n]"
+2023-07-25 15:23:56.210 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:56.314 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-25 15:23:56.314 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:56.315 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:56.315 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:56.316 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 149[\r][\n]"
+2023-07-25 15:23:56.316 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"95-TkBwBRD8eNJi8+Bq8ZtutxxCjkA"[\r][\n]"
+2023-07-25 15:23:56.317 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:54 GMT[\r][\n]"
+2023-07-25 15:23:56.317 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:56.318 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:56.318 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:56.318 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-25 15:23:56.318 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-25 15:23:56.319 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:56.320 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:56.320 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:56.320 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 149
+2023-07-25 15:23:56.320 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"95-TkBwBRD8eNJi8+Bq8ZtutxxCjkA"
+2023-07-25 15:23:56.322 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:54 GMT
+2023-07-25 15:23:56.322 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:56.322 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:56.322 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:56.323 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:56.323 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:56.325 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"platformId":"8af4e6b6-8f19-41e0-a3d6-45272dc1b1ec","idFilterItems":["d39d6e49-cb3f-4359-a24d-2f6477fdce18","311cf57b-f7af-430e-9bec-8a3c84370f48"]}"
+2023-07-25 15:23:56.325 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4863c8ac
+2023-07-25 15:23:56.326 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:56.431 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:56.432 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:56.511 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:56.512 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:56.513 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:56.513 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:56.513 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/35771ffc-86b5-4a59-945d-2e51c8a2aedc1/filters HTTP/1.1
+2023-07-25 15:23:56.514 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/35771ffc-86b5-4a59-945d-2e51c8a2aedc1/filters HTTP/1.1[\r][\n]"
+2023-07-25 15:23:56.515 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:56.515 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:56.515 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:56.515 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 120[\r][\n]"
+2023-07-25 15:23:56.516 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:56.516 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:56.516 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:56.517 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:56.517 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:56.518 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/35771ffc-86b5-4a59-945d-2e51c8a2aedc1/filters HTTP/1.1
+2023-07-25 15:23:56.518 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:56.518 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:56.519 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:56.519 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 120
+2023-07-25 15:23:56.519 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:56.520 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:56.520 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:56.520 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:56.521 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-25 15:23:56.521 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "idFilterItems": [[\r][\n]"
+2023-07-25 15:23:56.522 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "d39d6e49-cb3f-4359-a24d-2f6477fdce18",[\r][\n]"
+2023-07-25 15:23:56.522 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "311cf57b-f7af-430e-9bec-8a3c84370f48"[\r][\n]"
+2023-07-25 15:23:56.523 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  ][\r][\n]"
+2023-07-25 15:23:56.523 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:56.618 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:56.620 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:56.623 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:56.625 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:56.628 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 89[\r][\n]"
+2023-07-25 15:23:56.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"[\r][\n]"
+2023-07-25 15:23:56.633 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:54 GMT[\r][\n]"
+2023-07-25 15:23:56.635 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:56.637 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:56.640 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:56.642 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:56.643 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:56.645 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:56.647 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:56.648 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:56.649 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 89
+2023-07-25 15:23:56.651 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"59-/sg/0fkOtac7fT9noJv7kFnQjqU"
+2023-07-25 15:23:56.652 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:54 GMT
+2023-07-25 15:23:56.654 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:56.656 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:56.659 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:56.662 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:56.664 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:56.674 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":"Validation failed (uuid is expected)","error":"Bad Request"}"
+2023-07-25 15:23:56.676 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@47fb7ec9
+2023-07-25 15:23:56.678 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:56.763 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:56.764 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:56.851 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:56.851 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:56.852 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:56.853 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:56.853 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: PUT /api/platforms/35771ffc-86b5-4a59-945d-2e51c8a2aedc/filters HTTP/1.1
+2023-07-25 15:23:56.854 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "PUT /api/platforms/35771ffc-86b5-4a59-945d-2e51c8a2aedc/filters HTTP/1.1[\r][\n]"
+2023-07-25 15:23:56.857 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o[\r][\n]"
+2023-07-25 15:23:56.857 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:56.858 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:56.859 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 72[\r][\n]"
+2023-07-25 15:23:56.861 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:56.861 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:56.861 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:56.862 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:56.863 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:56.864 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> PUT /api/platforms/35771ffc-86b5-4a59-945d-2e51c8a2aedc/filters HTTP/1.1
+2023-07-25 15:23:56.865 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlN1cGVyQWRtaW5AbWFpbC5ydSIsImlkIjoiNDA3MjUyZWQtYTgwNi00NTdmLWJlZjUtYzI4NjExOGM0MTk5Iiwicm9sZSI6IlN1cGVyQWRtaW4iLCJpYXQiOjE2OTAyODc4MjYsImV4cCI6MTY5MDM3NDIyNn0.P13UlDaXJe4Ky_1OSXutFWszov84v3aKJX5upo_m44o
+2023-07-25 15:23:56.865 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:56.866 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:56.867 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 72
+2023-07-25 15:23:56.868 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:56.868 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:56.869 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:56.870 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:56.871 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\n]"
+2023-07-25 15:23:56.871 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "idFilterItems": [[\n]"
+2023-07-25 15:23:56.873 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "d39d6e49-cb3f-4359-a24d-2f6477fdce18",[\n]"
+2023-07-25 15:23:56.874 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  ][\n]"
+2023-07-25 15:23:56.874 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:57.006 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2023-07-25 15:23:57.008 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:57.008 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:57.009 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:57.009 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 94[\r][\n]"
+2023-07-25 15:23:57.010 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"5e-2Is8J1JxlpoyjTxoO03KsmDnEYc"[\r][\n]"
+2023-07-25 15:23:57.010 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:54 GMT[\r][\n]"
+2023-07-25 15:23:57.010 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:57.011 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:57.011 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:57.012 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 400 Bad Request
+2023-07-25 15:23:57.013 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 400 Bad Request
+2023-07-25 15:23:57.013 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:57.013 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:57.015 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:57.015 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 94
+2023-07-25 15:23:57.016 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"5e-2Is8J1JxlpoyjTxoO03KsmDnEYc"
+2023-07-25 15:23:57.016 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:54 GMT
+2023-07-25 15:23:57.017 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:57.017 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:57.020 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:57.021 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:57.023 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:57.026 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"statusCode":400,"message":"Unexpected token ] in JSON at position 69","error":"Bad Request"}"
+2023-07-25 15:23:57.026 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7a3f08b6
+2023-07-25 15:23:57.027 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:57.072 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {}->http://node.twnsnd.online:31033
+2023-07-25 15:23:57.073 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to node.twnsnd.online:31033
+2023-07-25 15:23:57.218 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-25 15:23:57.220 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-25 15:23:57.223 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-25 15:23:57.225 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-25 15:23:57.227 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-25 15:23:57.228 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: POST /api/platforms/filtration HTTP/1.1
+2023-07-25 15:23:57.230 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "POST /api/platforms/filtration HTTP/1.1[\r][\n]"
+2023-07-25 15:23:57.232 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-25 15:23:57.233 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-07-25 15:23:57.235 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Content-Length: 120[\r][\n]"
+2023-07-25 15:23:57.237 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: node.twnsnd.online:31033[\r][\n]"
+2023-07-25 15:23:57.239 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-25 15:23:57.242 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-25 15:23:57.244 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-25 15:23:57.246 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-25 15:23:57.248 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> POST /api/platforms/filtration HTTP/1.1
+2023-07-25 15:23:57.249 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-25 15:23:57.251 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-07-25 15:23:57.253 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Content-Length: 120
+2023-07-25 15:23:57.256 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: node.twnsnd.online:31033
+2023-07-25 15:23:57.257 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-25 15:23:57.259 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-25 15:23:57.261 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-25 15:23:57.263 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "{[\r][\n]"
+2023-07-25 15:23:57.264 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  "idFilterItems": [[\r][\n]"
+2023-07-25 15:23:57.265 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "d39d6e49-cb3f-4359-a24d-2f6477fdce18",[\r][\n]"
+2023-07-25 15:23:57.267 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "    "311cf57b-f7af-430e-9bec-8a3c84370f48"[\r][\n]"
+2023-07-25 15:23:57.268 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "  ][\r][\n]"
+2023-07-25 15:23:57.269 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  >> "}"
+2023-07-25 15:23:57.386 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-07-25 15:23:57.389 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-25 15:23:57.391 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-25 15:23:57.394 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-25 15:23:57.396 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Length: 366[\r][\n]"
+2023-07-25 15:23:57.398 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "ETag: W/"16e-JBRlE+2sCinDPDHJEIydLqgamz4"[\r][\n]"
+2023-07-25 15:23:57.400 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Tue, 25 Jul 2023 12:23:55 GMT[\r][\n]"
+2023-07-25 15:23:57.402 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-25 15:23:57.404 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-07-25 15:23:57.406 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-25 15:23:57.409 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 201 Created
+2023-07-25 15:23:57.411 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 201 Created
+2023-07-25 15:23:57.413 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-25 15:23:57.415 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-25 15:23:57.417 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-25 15:23:57.419 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Length: 366
+2023-07-25 15:23:57.422 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << ETag: W/"16e-JBRlE+2sCinDPDHJEIydLqgamz4"
+2023-07-25 15:23:57.426 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Tue, 25 Jul 2023 12:23:55 GMT
+2023-07-25 15:23:57.428 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-25 15:23:57.430 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Keep-Alive: timeout=5
+2023-07-25 15:23:57.432 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive for 5000 MILLISECONDS
+2023-07-25 15:23:57.433 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-25 15:23:57.435 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-25 15:23:57.437 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "{"numberOfPages":1,"pageNumber":1,"numberOfPlatformsPerPage":24,"countRows":1,"rows":[{"id":"a2d6ffb8-4722-4a2d-8d90-0f576b29b3ce","isActive":true,"name":"[0xd0][0xa1][0xd1][0x83][0xd0][0xbf][0xd0][0xb5][0xd1][0x80] [0xd0][0xbf][0xd0][0xbb][0xd0][0xb0][0xd1][0x82][0xd1][0x84][0xd0][0xbe][0xd1][0x80][0xd0][0xbc][0xd0][0xb0] 2","description":"string","urlWebsite":"string","priceMin":5,"priceMax":6,"numberOfSolution":0,"fileUrl":null,"adminId":"407252ed-a806-457f-bef5-c286118c4199","isFavorites":false}]}"
+2023-07-25 15:23:57.441 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6b2aafbc
+2023-07-25 15:23:57.442 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive for 5000 MILLISECONDS

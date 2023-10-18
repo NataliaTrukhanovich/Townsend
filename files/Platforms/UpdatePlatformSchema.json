@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "isActive",
+    "name",
+    "description",
+    "urlWebsite",
+    "fileUrl",
+    "priceMin",
+    "priceMax",
+    "numberOfSolution",
+    "adminId"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "urlWebsite": {
+      "type": ["string", "null"]
+    },
+    "fileUrl": {
+      "type": ["string", "null"]
+    },
+    "priceMin": {
+      "type": "integer"
+    },
+    "priceMax": {
+      "type": "integer"
+    },
+    "numberOfSolution": {
+      "type": "integer"
+    },
+    "adminId": {
+      "type": "string"
+    }
+  }
+}

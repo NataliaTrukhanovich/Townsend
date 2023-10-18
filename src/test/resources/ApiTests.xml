@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Tests" thread-count="1">
+
+    <test name="Platforms CRUD operations tests">
+        <classes>
+            <class name="PlatformsCrudTests"></class>
+        </classes>
+    </test>
+
+    <test name="Platforms other operations tests" enabled="true">
+        <classes>
+            <class name="PlatformOtherOperationsTests"></class>
+        </classes>
+    </test>
+
+    <test name="Filter tests" enabled="false">
+        <classes>
+            <class name="FiltersForPlatformTests"></class>
+        </classes>
+    </test>
+</suite>

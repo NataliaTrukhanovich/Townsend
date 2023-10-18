@@ -1,0 +1,345 @@
+2023-07-02 08:59:18.514 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {s}->https://reqres.in:443
+2023-07-02 08:59:19.099 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to reqres.in:443
+2023-07-02 08:59:20.463 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-02 08:59:20.463 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-02 08:59:20.463 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-02 08:59:20.479 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/users?page=2 HTTP/1.1
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: reqres.in[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/users?page=2 HTTP/1.1
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: reqres.in
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-02 08:59:20.479 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-02 08:59:20.496 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-02 08:59:21.763 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-02 08:59:21.785 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Sun, 02 Jul 2023 05:59:18 GMT[\r][\n]"
+2023-07-02 08:59:21.785 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Via: 1.1 vegur[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Cache-Control: max-age=14400[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-Cache-Status: HIT[\r][\n]"
+2023-07-02 08:59:21.797 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Age: 251[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b00si37ujsodGcGkksFXEH9YO68E5LFnv0xXrj19H6suNUmI%2FWW7gyP5ZXlPOl%2FS4xV222VoqyrYKtTAyvIrmOcbNtdHbCycj65guUuzVh3L22XuNJ54J%2B24LA%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Vary: Accept-Encoding[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Server: cloudflare[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-RAY: 7e04a9779fa02498-KBP[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Encoding: gzip[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-02 08:59:21.813 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-02 08:59:21.824 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Sun, 02 Jul 2023 05:59:18 GMT
+2023-07-02 08:59:21.825 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-02 08:59:21.826 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Transfer-Encoding: chunked
+2023-07-02 08:59:21.827 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-02 08:59:21.828 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-02 08:59:21.829 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-02 08:59:21.830 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+2023-07-02 08:59:21.831 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Via: 1.1 vegur
+2023-07-02 08:59:21.832 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Cache-Control: max-age=14400
+2023-07-02 08:59:21.833 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-Cache-Status: HIT
+2023-07-02 08:59:21.834 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Age: 251
+2023-07-02 08:59:21.834 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b00si37ujsodGcGkksFXEH9YO68E5LFnv0xXrj19H6suNUmI%2FWW7gyP5ZXlPOl%2FS4xV222VoqyrYKtTAyvIrmOcbNtdHbCycj65guUuzVh3L22XuNJ54J%2B24LA%3D%3D"}],"group":"cf-nel","max_age":604800}
+2023-07-02 08:59:21.835 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-07-02 08:59:21.836 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Vary: Accept-Encoding
+2023-07-02 08:59:21.836 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Server: cloudflare
+2023-07-02 08:59:21.837 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-RAY: 7e04a9779fa02498-KBP
+2023-07-02 08:59:21.838 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Encoding: gzip
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-07-02 08:59:21.845 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "17b[\r][\n]"
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "0[\r][\n]"
+2023-07-02 08:59:21.845 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 08:59:21.860 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-02 09:00:13.596 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {s}->https://reqres.in:443
+2023-07-02 09:00:13.646 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to reqres.in:443
+2023-07-02 09:00:14.126 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-02 09:00:14.130 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-02 09:00:14.131 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-02 09:00:14.132 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-02 09:00:14.133 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-02 09:00:14.134 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:00:14.135 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+2023-07-02 09:00:14.137 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-02 09:00:14.138 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: reqres.in[\r][\n]"
+2023-07-02 09:00:14.139 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-02 09:00:14.139 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-02 09:00:14.140 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-02 09:00:14.140 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-02 09:00:14.141 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:00:14.142 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-02 09:00:14.142 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: reqres.in
+2023-07-02 09:00:14.146 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-02 09:00:14.146 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-02 09:00:14.146 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-02 09:00:14.313 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-02 09:00:14.313 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Sun, 02 Jul 2023 06:00:11 GMT[\r][\n]"
+2023-07-02 09:00:14.330 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-02 09:00:14.334 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-07-02 09:00:14.334 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-02 09:00:14.334 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-02 09:00:14.346 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-02 09:00:14.350 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+2023-07-02 09:00:14.363 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Via: 1.1 vegur[\r][\n]"
+2023-07-02 09:00:14.368 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Cache-Control: max-age=14400[\r][\n]"
+2023-07-02 09:00:14.371 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-Cache-Status: REVALIDATED[\r][\n]"
+2023-07-02 09:00:14.371 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aLKVDtnMYvb9zr13It60br8DkN5twKMp9odK%2F54KpE0ydIyWKVFdOPf8EDjII4vNIf%2FqStxJfsxjcrwTZJpjdqpMSxiVeqPCrZKcjTYG%2FSNUBrA0Hd26ykW5ww%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Vary: Accept-Encoding[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Server: cloudflare[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-RAY: 7e04aabf6fa0f298-WAW[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Encoding: gzip[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Sun, 02 Jul 2023 06:00:11 GMT
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Transfer-Encoding: chunked
+2023-07-02 09:00:14.379 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Via: 1.1 vegur
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Cache-Control: max-age=14400
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-Cache-Status: REVALIDATED
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aLKVDtnMYvb9zr13It60br8DkN5twKMp9odK%2F54KpE0ydIyWKVFdOPf8EDjII4vNIf%2FqStxJfsxjcrwTZJpjdqpMSxiVeqPCrZKcjTYG%2FSNUBrA0Hd26ykW5ww%3D%3D"}],"group":"cf-nel","max_age":604800}
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Vary: Accept-Encoding
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Server: cloudflare
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-RAY: 7e04aabf6fa0f298-WAW
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Encoding: gzip
+2023-07-02 09:00:14.397 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-07-02 09:00:14.412 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "17b[\r][\n]"
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "0[\r][\n]"
+2023-07-02 09:00:14.412 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:00:14.412 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-02 09:01:42.812 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {s}->https://reqres.in:443
+2023-07-02 09:01:42.862 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to reqres.in:443
+2023-07-02 09:01:43.345 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-02 09:01:43.345 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-02 09:01:43.345 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-02 09:01:43.345 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: reqres.in[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: reqres.in
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-02 09:01:43.362 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-02 09:01:43.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-02 09:01:43.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Sun, 02 Jul 2023 06:01:40 GMT[\r][\n]"
+2023-07-02 09:01:43.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Via: 1.1 vegur[\r][\n]"
+2023-07-02 09:01:43.513 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Cache-Control: max-age=14400[\r][\n]"
+2023-07-02 09:01:43.531 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-Cache-Status: HIT[\r][\n]"
+2023-07-02 09:01:43.531 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Age: 5138[\r][\n]"
+2023-07-02 09:01:43.531 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zC9OHimSEDyWO9hQq%2Fn47OJcrXLGCN%2FKXtEgcs1Mk1R2AG7VxrXX4brDLTT%2FMISscUL%2FmVBLym6K8iA99bh0efJCUlQNNGSP9EOLF4FmPalspnq8ruiFmaYG4A%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:01:43.531 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:01:43.545 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Vary: Accept-Encoding[\r][\n]"
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Server: cloudflare[\r][\n]"
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-RAY: 7e04aced3c0a03e0-FRA[\r][\n]"
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Encoding: gzip[\r][\n]"
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Sun, 02 Jul 2023 06:01:40 GMT
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Transfer-Encoding: chunked
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+2023-07-02 09:01:43.546 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Via: 1.1 vegur
+2023-07-02 09:01:43.563 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Cache-Control: max-age=14400
+2023-07-02 09:01:43.563 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-Cache-Status: HIT
+2023-07-02 09:01:43.584 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Age: 5138
+2023-07-02 09:01:43.586 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zC9OHimSEDyWO9hQq%2Fn47OJcrXLGCN%2FKXtEgcs1Mk1R2AG7VxrXX4brDLTT%2FMISscUL%2FmVBLym6K8iA99bh0efJCUlQNNGSP9EOLF4FmPalspnq8ruiFmaYG4A%3D%3D"}],"group":"cf-nel","max_age":604800}
+2023-07-02 09:01:43.586 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-07-02 09:01:43.596 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Vary: Accept-Encoding
+2023-07-02 09:01:43.596 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Server: cloudflare
+2023-07-02 09:01:43.596 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-RAY: 7e04aced3c0a03e0-FRA
+2023-07-02 09:01:43.596 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Encoding: gzip
+2023-07-02 09:01:43.614 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-07-02 09:01:43.630 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-02 09:01:43.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "17b[\r][\n]"
+2023-07-02 09:01:43.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+2023-07-02 09:01:43.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+2023-07-02 09:01:43.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+2023-07-02 09:01:43.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:01:43.630 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "0[\r][\n]"
+2023-07-02 09:01:43.645 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:01:43.645 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-02 09:01:43.714 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@934b52f
+2023-07-02 09:01:43.714 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely
+2023-07-02 09:03:25.766 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {s}->https://reqres.in:443
+2023-07-02 09:03:25.799 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to reqres.in:443
+2023-07-02 09:03:28.307 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-02 09:03:28.310 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-02 09:03:28.311 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-02 09:03:28.313 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-02 09:03:28.314 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-02 09:03:28.315 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:03:28.316 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+2023-07-02 09:03:28.317 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-02 09:03:28.318 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: reqres.in[\r][\n]"
+2023-07-02 09:03:28.319 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-02 09:03:28.320 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-02 09:03:28.320 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-02 09:03:28.321 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-02 09:03:28.322 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:03:28.323 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-02 09:03:28.323 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: reqres.in
+2023-07-02 09:03:28.323 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-02 09:03:28.323 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-02 09:03:28.323 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-02 09:03:28.415 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-02 09:03:28.437 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Sun, 02 Jul 2023 06:03:25 GMT[\r][\n]"
+2023-07-02 09:03:28.437 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-02 09:03:28.447 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Via: 1.1 vegur[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Cache-Control: max-age=14400[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-Cache-Status: HIT[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Age: 194[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Dz9rszLMeqsn4VzJo18Qz1RAqKa4QMSGI5CmoAIEAUJI4qmaODBHYNxYGIgey48gtbCcA0rUZH%2F4PXed3qz7neP8RdJqTmEMdCh0wrdsUeXs8gkPt3%2BO6VQRKw%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:03:28.449 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:03:28.463 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Vary: Accept-Encoding[\r][\n]"
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Server: cloudflare[\r][\n]"
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-RAY: 7e04af7d1d1afc73-WAW[\r][\n]"
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Encoding: gzip[\r][\n]"
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-02 09:03:28.464 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Sun, 02 Jul 2023 06:03:25 GMT
+2023-07-02 09:03:28.472 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-02 09:03:28.472 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Transfer-Encoding: chunked
+2023-07-02 09:03:28.473 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-02 09:03:28.473 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-02 09:03:28.474 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-02 09:03:28.474 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+2023-07-02 09:03:28.475 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Via: 1.1 vegur
+2023-07-02 09:03:28.475 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Cache-Control: max-age=14400
+2023-07-02 09:03:28.475 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-Cache-Status: HIT
+2023-07-02 09:03:28.476 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Age: 194
+2023-07-02 09:03:28.476 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Dz9rszLMeqsn4VzJo18Qz1RAqKa4QMSGI5CmoAIEAUJI4qmaODBHYNxYGIgey48gtbCcA0rUZH%2F4PXed3qz7neP8RdJqTmEMdCh0wrdsUeXs8gkPt3%2BO6VQRKw%3D%3D"}],"group":"cf-nel","max_age":604800}
+2023-07-02 09:03:28.477 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-07-02 09:03:28.478 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Vary: Accept-Encoding
+2023-07-02 09:03:28.479 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Server: cloudflare
+2023-07-02 09:03:28.480 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-RAY: 7e04af7d1d1afc73-WAW
+2023-07-02 09:03:28.480 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Encoding: gzip
+2023-07-02 09:03:28.486 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-07-02 09:03:28.486 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "17b[\r][\n]"
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "0[\r][\n]"
+2023-07-02 09:03:28.496 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:03:28.496 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-02 09:04:00.516 [main] org.apache.http.impl.conn.BasicClientConnectionManager.getConnection(BasicClientConnectionManager.java:161) - Get connection for route {s}->https://reqres.in:443
+2023-07-02 09:04:00.550 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) - Connecting to reqres.in:443
+2023-07-02 09:04:00.916 [main] org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-07-02 09:04:00.918 [main] org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
+2023-07-02 09:04:00.919 [main] org.apache.http.client.protocol.RequestTargetAuthentication.process(RequestTargetAuthentication.java:80) - Target auth state: UNCHALLENGED
+2023-07-02 09:04:00.920 [main] org.apache.http.client.protocol.RequestProxyAuthentication.process(RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-07-02 09:04:00.921 [main] org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-07-02 09:04:00.922 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:274) - Sending request: GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:04:00.922 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+2023-07-02 09:04:00.924 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-07-02 09:04:00.925 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Host: reqres.in[\r][\n]"
+2023-07-02 09:04:00.926 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-07-02 09:04:00.926 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)[\r][\n]"
+2023-07-02 09:04:00.927 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-07-02 09:04:00.928 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  >> "[\r][\n]"
+2023-07-02 09:04:00.928 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:278) - >> GET /api/users?page=2 HTTP/1.1
+2023-07-02 09:04:00.930 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept: */*
+2023-07-02 09:04:00.932 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Host: reqres.in
+2023-07-02 09:04:00.934 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-07-02 09:04:00.935 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.2)
+2023-07-02 09:04:00.936 [main] org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-07-02 09:04:01.151 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-07-02 09:04:01.158 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Date: Sun, 02 Jul 2023 06:03:58 GMT[\r][\n]"
+2023-07-02 09:04:01.158 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-07-02 09:04:01.158 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Connection: keep-alive[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "X-Powered-By: Express[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Via: 1.1 vegur[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Cache-Control: max-age=14400[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-Cache-Status: REVALIDATED[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=A3G0nIu4GUgtZusZrmfALIO%2BdGoW%2BXqgvDmuoSxYd3zkKEdZ9YDF9GMLeGYJIfNfkIUnuFJ%2FoivUpBX14wQSsptZSS5NKXg9h8K7QV%2Bc5vColNynWQ4sByhKgA%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:04:01.167 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Vary: Accept-Encoding[\r][\n]"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Server: cloudflare[\r][\n]"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "CF-RAY: 7e04b048e8da9dab-DME[\r][\n]"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "Content-Encoding: gzip[\r][\n]"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 200 OK
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:262) - << HTTP/1.1 200 OK
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Date: Sun, 02 Jul 2023 06:03:58 GMT
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Transfer-Encoding: chunked
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Connection: keep-alive
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << X-Powered-By: Express
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Via: 1.1 vegur
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Cache-Control: max-age=14400
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-Cache-Status: REVALIDATED
+2023-07-02 09:04:01.183 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=A3G0nIu4GUgtZusZrmfALIO%2BdGoW%2BXqgvDmuoSxYd3zkKEdZ9YDF9GMLeGYJIfNfkIUnuFJ%2FoivUpBX14wQSsptZSS5NKXg9h8K7QV%2Bc5vColNynWQ4sByhKgA%3D%3D"}],"group":"cf-nel","max_age":604800}
+2023-07-02 09:04:01.202 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-07-02 09:04:01.202 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Vary: Accept-Encoding
+2023-07-02 09:04:01.202 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Server: cloudflare
+2023-07-02 09:04:01.202 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << CF-RAY: 7e04b048e8da9dab-DME
+2023-07-02 09:04:01.202 [main] org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:265) - << Content-Encoding: gzip
+2023-07-02 09:04:01.202 [main] org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-07-02 09:04:01.216 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "17b[\r][\n]"
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:87) -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "0[\r][\n]"
+2023-07-02 09:04:01.216 [main] org.apache.http.impl.conn.Wire.wire(Wire.java:73) -  << "[\r][\n]"
+2023-07-02 09:04:01.216 [main] io.restassured.internal.http.HTTPBuilder.parseResponse(HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-07-02 09:04:01.266 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@76ad6715
+2023-07-02 09:04:01.282 [main] org.apache.http.impl.conn.BasicClientConnectionManager.releaseConnection(BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely

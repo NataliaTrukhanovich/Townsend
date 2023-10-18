@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "required": [
+    "numberOfPages",
+    "pageNumber",
+    "numberOfPlatformsPerPage",
+    "countRows",
+    "rows"
+  ],
+  "properties": {
+    "numberOfPages": {
+      "type": "integer"
+    },
+    "pageNumber": {
+      "type": "integer"
+    },
+    "numberOfPlatformsPerPage": {
+      "type": "integer"
+    },
+    "countRows": {
+      "type": "integer"
+    },
+    "rows": {
+      "type": "array",
+      "items": {}
+    }
+  }
+}
